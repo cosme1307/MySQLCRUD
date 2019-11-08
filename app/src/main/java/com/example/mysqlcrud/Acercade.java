@@ -6,6 +6,8 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.javier.R;
+
 public class Acercade extends AppCompatActivity {
         TextView tvNombre, tvDireccion;
         ImageView tvfoto;
