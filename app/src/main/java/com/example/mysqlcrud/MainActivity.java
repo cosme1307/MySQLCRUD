@@ -1,5 +1,6 @@
 package com.example.mysqlcrud;
 
+
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -18,7 +19,6 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
-import com.example.javier.R;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 
@@ -73,14 +73,14 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Toolbar toolbar = findViewById(R.id.toolbar);
+       /* Toolbar toolbar = findViewById(R.id.toolbar);
         toolbar.setNavigationIcon(getResources().getDrawable(R.drawable.ic_back));
         toolbar.setTitleTextColor(getResources().getColor(R.color.mycolor1));
         toolbar.setTitleMargin(0, 0, 0, 0);
         toolbar.setSubtitle("CRUD MySQL");
         toolbar.setSubtitleTextColor(getResources().getColor(R.color.mycolor));
         toolbar.setTitle("App MySQL");
-        setSupportActionBar(toolbar);
+        setSupportActionBar(toolbar);*/
 
         ///y esto para pantalla completa (oculta incluso la barra de estado)
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
@@ -96,12 +96,12 @@ public class MainActivity extends AppCompatActivity {
         //tv_resultado = (TextView) findViewById(R.id.tv_resultado);
 
 
-        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+     /*   toolbar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 DialogConfirmacion();
             }
-        });
+        });*/
 
 
         /******************************************************************/
@@ -287,14 +287,14 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
-        FloatingActionButton fab = findViewById(R.id.fab);
+      /*  FloatingActionButton fab = findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
             }
-        });
+        });*/
 
     }
 
@@ -332,7 +332,7 @@ public class MainActivity extends AppCompatActivity {
             Intent spinnerActivity = new Intent(MainActivity.this, Consulta_RecyclerView.class);
             startActivity(spinnerActivity);
             return true;
-        }else if (id== R.id.action_acercade){
+        }else if (id==R.id.action_acercade){
             Intent spinnerActivity = new Intent(MainActivity.this, Acercade.class);
             startActivity(spinnerActivity);
 
@@ -412,19 +412,19 @@ public class MainActivity extends AppCompatActivity {
 
 
     public String getSharedCodigo(Context context) {
-        SharedPreferences preferences = context.getSharedPreferences("diana", MODE_PRIVATE);
+        SharedPreferences preferences = context.getSharedPreferences("", MODE_PRIVATE);
         String codigo = preferences.getString("codigo","0");
         return codigo;   //return preferences.getString("tiempo", "Sin configurar.");
     }
 
     public String getSharedDescripcion(Context context) {
-        SharedPreferences preferences = context.getSharedPreferences("diana", MODE_PRIVATE);
+        SharedPreferences preferences = context.getSharedPreferences("", MODE_PRIVATE);
         String descripcion = preferences.getString("descripcion","Sin descripción");
         return descripcion;   //return preferences.getString("tiempo", "Sin configurar.");
     }
 
     public String getSharedPrecio(Context context) {
-        SharedPreferences preferences = context.getSharedPreferences("diana", MODE_PRIVATE);
+        SharedPreferences preferences = context.getSharedPreferences("", MODE_PRIVATE);
         String precio = preferences.getString("precio","0.0");
         return precio;   //return preferences.getString("tiempo", "Sin configurar.");
     }
@@ -432,3 +432,4 @@ public class MainActivity extends AppCompatActivity {
 
 
 }
+

@@ -7,7 +7,7 @@
     android:orientation="vertical"
     android:background="#2196F3"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.example.javier.MainActivity"
+    tools:context="com.example.mysqlcrud.MainActivity"
     tools:showIn="@layout/activity_main">
 
     <TextView
@@ -16,7 +16,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:fontFamily="serif-monospace"
-        android:text="CRUD - MYSQL\nJAVA-ANDROID"
+        android:text="CRUD - MYSQL\n Cosme Jose"
         android:textAlignment="center"
         android:textColor="#E42112"
         android:textSize="26dp"

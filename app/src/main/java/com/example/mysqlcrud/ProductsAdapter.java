@@ -10,7 +10,7 @@ import android.widget.TextView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
-import com.example.javier.R;
+import com.example.mysqlcrud.R;
 
 import java.util.List;
 

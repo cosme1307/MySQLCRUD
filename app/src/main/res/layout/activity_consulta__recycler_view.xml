@@ -4,22 +4,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.javier.Consulta_RecyclerView">
+    android:orientation="vertical"
+    tools:context="com.example.mysqlcrud.Consulta_RecyclerView">
 
-    <com.google.android.material.appbar.AppBarLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:theme="@style/AppTheme.AppBarOverlay"
-        >
+    <!-- <com.google.android.material.appbar.AppBarLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:theme="@style/AppTheme.AppBarOverlay"
+         >
 
-        <androidx.appcompat.widget.Toolbar
-            android:id="@+id/toolbar1"
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="#000"
-            app:popupTheme="@style/AppTheme.PopupOverlay" />
+         <androidx.appcompat.widget.Toolbar
+             android:id="@+id/toolbar1"
+             android:layout_width="match_parent"
+             android:layout_height="?attr/actionBarSize"
+             android:background="#000"
+             app:popupTheme="@style/AppTheme.PopupOverlay" />
 
-    </com.google.android.material.appbar.AppBarLayout>
+     </com.google.android.material.appbar.AppBarLayout>-->
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"

@@ -19,7 +19,7 @@ import com.android.volley.Request;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
-import com.example.javier.R;
+import com.example.mysqlcrud.R;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -69,20 +69,20 @@ public class Consulta_RecyclerView extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_consulta__recycler_view);
 
-        Toolbar toolbar = findViewById(R.id.toolbar1);
+       /* Toolbar toolbar = findViewById(R.id.toolbar1);
         toolbar.setNavigationIcon(getResources().getDrawable(R.drawable.ic_back));
         toolbar.setTitleTextColor(getResources().getColor(R.color.mycolor1));
         toolbar.setTitleMargin(0, 0, 0, 0);
         toolbar.setSubtitle("Consulta de Artículos");
         toolbar.setSubtitleTextColor(getResources().getColor(R.color.mycolor));
-        toolbar.setTitle("MySQL CRUD");
+        toolbar.setTitle("MySQL CRUD");*/
 
-        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+       /* toolbar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 DialogConfirmacion();
             }
-        });
+        });*/
 
         ///y esto para pantalla completa (oculta incluso la barra de estado)
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
