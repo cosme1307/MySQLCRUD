@@ -22,9 +22,9 @@ public class Acercade extends AppCompatActivity {
         }
         public void informacion (){
 
-            tvNombre.setText("");
+            tvNombre.setText("Cosme José Monterroza");
 
-            tvDireccion.setText("");
+            tvDireccion.setText("SIS22A");
 
         }
     }
